@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Web Client</title>
+	
+		<link rel="stylesheet" href="XMPP_Client.css">
+		<script src=strophe.js></script>
+		<script src=XMPP_Client.js></script>
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+	
+ 	<input  id="serverName" placeholder="serverName"/>
+	<input  id="JID" placeholder="JID"/>
+	<input  id="PWD" type="password" placeholder="Password"/>
+	<button type="button" onclick="server_connect();" >Connect</button>
+
+	<div id = "statusDiv">
+	<select  id="show" >
+		<option value="chat">Available</option>
+  		<option value="dnd">Busy</option>
+		<option value="away">Away</option>
+		<option value="xa">Gone</option>
+	<status/>
+
+	<input  id="statusTxt" placeholder = "Status Message"/>
+	<button type="button" onclick="sendPresence();"  >Update Status</button>
+	<div>
+
+	<div id = "messageDiv">
+	<input  id="SendTo" placeholder = "Send to JID"/>
+	<input  id="MsgBody" placeholder = "Message"/>
+	<button type="button"  onclick="sendMsg();">Send</button>
+	</div>
+
+ 	<p id="connection_status"></p>
+	
+	<div id="chatArea">
+	<p id="message_text"></p>
+	</div>
+	
+</body>
+</html>
+
+ 

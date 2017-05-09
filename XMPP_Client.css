@@ -1,0 +1,21 @@
+body{
+	background-color:#b3ecff;	
+}
+
+#chatArea{
+	background-color:#e6ffcc;	
+	width:30%;
+	background-color:#red;	
+	border-radius:25px;
+	border:1.5px solid #73AD21;
+}
+
+#chatArea p{
+
+font-family: 'Open Sans Condensed', sans-serif;
+word-break: break-all; 
+word-wrap: break-word;
+font-size: 1 em;
+font-style: italic;
+
+}
